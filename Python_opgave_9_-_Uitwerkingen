@@ -1,0 +1,12 @@
+def vermenigvuldig_oneven_getallen(num):
+    ding = 1
+    for getal in str(num):
+        if int(getal) % 2 != 0:  
+            ding *= int(getal)
+    return ding
+
+nummers = [1234567890, 13579, 11111111111, 22468820, 1000, 2000, 453346875689]
+
+for num in nummers:
+    ding = vermenigvuldig_oneven_getallen(num)
+    print("De oneven cijfers in het getal", num, "geven als product", ding)
